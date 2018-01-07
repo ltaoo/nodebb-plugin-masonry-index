@@ -1,0 +1,29 @@
+{
+  "name": "nodebb-plugin-masonry-index",
+  "version": "0.0.1",
+  "description": "Show masonry recent posts in homepage",
+  "main": "./library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltaoo/nodebb-plugin-masonry-index"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "badges",
+    "topic",
+    "labels"
+  ],
+  "author": {
+    "name": "ltaoo",
+    "email": "litaowork@aliyun.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ltaoo/nodebb-plugin-masonry-index/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md"
+}

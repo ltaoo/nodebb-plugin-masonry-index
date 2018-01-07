@@ -1,0 +1,34 @@
+{
+	"id": "nodebb-plugin-masonry-index",
+	"name": "Masonry Index",
+	"description": "show masonry posts in homepage",
+	"url": "https://github.com/ltaoo/nodebb-plugin-masonry-index",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:homepage.get", "method": "addListing"
+		},
+		{
+			"hook": "action:homepage.get:masonryIndex", "method": "serveHomepage"
+		},
+		{
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+		},
+		{
+			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
+		},
+		{
+			"hook": "filter:widget.render:masonry", "method": "renderWidget"
+		}
+	],
+	"templates": "./templates",
+	"modules": {
+        "masonry.js": "static/vendor/masonry.min.js"
+    },
+	"scripts": [
+		"static/main.js"
+	]
+}
