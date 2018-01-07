@@ -13,4 +13,10 @@
 npm i --save nodebb-plugin-masonry-index
 ```
 
-参考`custom-homepage`增加首页后，在配置`widget`的时候，把`Masonry Index`这个组件放到`content`容器即可（大概）。
+在“拓展“ -> ”插件“ 找到并启用，会提示重启`NodeBB`，重启完成后，到”拓展“ -> ”窗口部件“ 中，选中`homepage.tpl`，这是新增的一个页面。然后右侧”可用的窗口部件“下拉项，找到`Masonry Posts`，拖到左侧的`Custom HP Content`内，保存。
+
+> 由于在手机端不怎么好看，可以点击该`widget`，勾选`Hide on mobile?`并保存。
+
+再到”基本“ -> ”主页“，将”主页路由“配置项修改为`Masonry Homepage`，保存。
+
+进入首页，刷新即可。

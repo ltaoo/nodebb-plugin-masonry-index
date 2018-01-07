@@ -25,7 +25,7 @@
     }
     .card__item {
         padding: 20px;
-        border-raduis: 5px;
+        border-radius: 5px;
         background: #fff;
         box-shadow: 0 0 10px #ccc;
     }
